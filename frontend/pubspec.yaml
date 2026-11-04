@@ -1,0 +1,48 @@
+name: canne_proche
+description: Application mobile du proche aidant - suivi de la canne intelligente GPS pour personnes malvoyantes.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # État de l'application
+  provider: ^6.1.2
+
+  # Réseau et stockage
+  http: ^1.2.2
+  flutter_secure_storage: ^9.2.2   # jeton JWT chiffré
+  shared_preferences: ^2.3.2       # préférences simples
+  sqflite: ^2.3.3+1                # cache hors ligne
+  path: ^1.9.0
+
+  # Carte (OpenStreetMap, sans clé)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2              # position du proche (itinéraire)
+
+  # Notifications
+  firebase_core: ^3.8.0
+  firebase_messaging: ^15.1.5
+  flutter_local_notifications: ^17.2.4
+
+  # Divers
+  url_launcher: ^6.3.1             # composeur téléphonique, liens
+  share_plus: ^10.1.4              # partage des liens de suivi
+  intl: ^0.20.2
+  google_fonts: ^6.2.1             # police Inter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
